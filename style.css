@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(217deg, rgba(255,0,0,.65), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.65), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.65), rgba(0,0,255,0) 70.71%);
+}
+
+.main {
+    min-width: 60vw;
+    max-width: 95vw;
+    height: auto;
+    overflow-y: auto;
+    background: #d1d1d1;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    gap: 20px;
+}
+
+.imagem-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.dados-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nome, .idade, .email {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 10px;
+}
