@@ -16,18 +16,63 @@
                 <span class="nome">
                     <h4>Nome:</h4> Julio Souza
                 </span>
-                <span class="idade">
+                <span id="span-idade" class="idade">
                     <h4>Idade:</h4> 20 anos
                 </span>
-                <span class="email">
+                <span id="span-email" class="email">
                     <h4>E-mail:</h4> julio.souza@gmail.com
+                </span>
+                <span id="span-historia" class="historia removido">
+                    <h4>História:</h4> Sou um programador back-end que gosto de fazer projetos para conseguir um portfólio e treinar.
                 </span>
             </div>
         </section>
+        <span class="separador"></span>
         <section class="section right">
             <h1 class="titulo">Gerador de Perfis</h1>
             <h3 class="sub-titulo">Usando Feth API</h3>
+            <section class="label">
+                <div>Idade</div>
+                <div class="container">
+                    <div class="toggle-wrapper">
+                        <label class="switch">
+                            <input id="btn-idade" type="checkbox" class="hidden-toggle" checked/>
+                            <div class="slider">
+                                <div class="button"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="label">
+                <div>E-mail</div>
+                <div class="container">
+                    <div class="toggle-wrapper">
+                        <label class="switch">
+                            <input id="btn-email" type="checkbox" class="hidden-toggle" checked/>
+                            <div class="slider">
+                                <div class="button"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="label">
+                <div>História</div>
+                <div class="container">
+                    <div class="toggle-wrapper">
+                        <label class="switch">
+                            <input id="btn-historia" type="checkbox" class="hidden-toggle" checked/>
+                            <div class="slider">
+                                <div class="button"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <div class="btn"><b>Gerar</b></div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

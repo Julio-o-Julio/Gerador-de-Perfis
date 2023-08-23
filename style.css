@@ -20,15 +20,19 @@ body {
 }
 
 .main {
-    min-width: 60vw;
-    max-width: 95vw;
-    height: auto;
+    width: 70vw;
+    height: 90vh;
     overflow-y: auto;
-    background: #d1d1d1;
+    background: #fff;
     border-radius: 24px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     flex-direction: row;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
 }
 
 .section {
@@ -51,7 +55,7 @@ body {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background-color: blue;
+    border: 1.5px solid #00ff00cc;
 }
 
 .dados-perfil {
@@ -60,11 +64,114 @@ body {
     gap: 10px;
 }
 
-.nome, .idade, .email {
+.nome, .idade, .email, .historia {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 5px 10px;
+    text-align: center;
+}
+
+.separador {
+    width: 1px;
+    height: 90%;
+    background-color: #00ff00cc;
+}
+
+.sub-titulo {
+    margin-bottom: 2rem;
+}
+
+.label {
+    background-color: rgb(0, 255, 255, 0.05);
+    width: 8rem;
+    height: 2rem;
+    margin: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 2rem;
+    background-color: rgba(0, 255, 0, 0.4);
+    padding: 0.5rem 1.2rem;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    border: 2px solid #a1a1a1;
+}
+
+.btn:hover {
+    background-color: #00ff00cc;
+    border: 2px solid #d1d1d1;
+}
+
+.removido {
+    display: none;
+}
+
+/* CSS dos botões de check */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Aqui comença o Toggler On/Off */
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Esconde o checkbox */
+.switch > .hidden-toggle {
+    display: none;
+}
+
+/* Caixinha onde o botão desliza */
+.switch > .slider {
+    background: #e0e2db;
+    border: 0.025rem solid #bbb;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 300ms ease-in-out;
+    width: 2.2rem;
+    height: 1rem;
+    position: relative;
+    box-shadow: inset -0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2), 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* O botão redondinho */
+.switch > .slider > .button {
+    content: "";
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: #00ff00cc;
+    top: 0.13rem;
+    left: 0.12rem;
+    transition: all 300ms ease-in-out;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: inset -0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Slider ON */
+.switch > .hidden-toggle:checked ~ .slider {
+    background: #00ff00cc;
+    box-shadow: inset 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(50, 0, 150, 0.2);
+}
+
+/* Botão ON */
+.switch > .hidden-toggle:checked ~ .slider > .button {
+    left: 1.35rem;
+    box-shadow: inset 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+    background: #e0e2db;
 }
