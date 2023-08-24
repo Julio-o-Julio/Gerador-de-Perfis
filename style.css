@@ -19,6 +19,12 @@ body {
                 linear-gradient(336deg, rgba(0,0,255,.65), rgba(0,0,255,0) 70.71%);
 }
 
+img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
 .main {
     width: 70vw;
     height: 90vh;
@@ -48,23 +54,22 @@ body {
 }
 
 .left {
-    gap: 20px;
+    gap: 15px;
 }
 
 .imagem-perfil {
+    position: relative;
     width: 180px;
     height: 180px;
-    border-radius: 50%;
     border: 1.5px solid #00ff00cc;
 }
 
 .dados-perfil {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-.nome, .idade, .email, .historia {
+.nome, .idade, .email {
     width: 100%;
     display: flex;
     align-items: center;
@@ -78,6 +83,10 @@ body {
     width: 1px;
     height: 90%;
     background-color: #00ff00cc;
+}
+
+.right {
+    text-align: center;
 }
 
 .sub-titulo {

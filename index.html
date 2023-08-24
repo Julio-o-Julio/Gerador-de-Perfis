@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Perfis</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/94882193?v=4" type="image/x-icon">
 </head>
 <body>
     <main class="main">
         <section class="section left">
             <div class="imagem-perfil">
-
+                <img id="imagem" src="https://avatars.githubusercontent.com/u/94882193?v=4" alt="Imagem de perfil">
             </div>
             <div class="dados-perfil">
                 <span class="nome">
-                    <h4>Nome:</h4> Julio Souza
+                    <h4>Nome:</h4> 
+                    <p id="nome">Julio Souza</p>
                 </span>
                 <span id="span-idade" class="idade">
-                    <h4>Idade:</h4> 20 anos
+                    <h4>Idade:</h4> 
+                    <p id="idade">20 anos</p>
                 </span>
                 <span id="span-email" class="email">
-                    <h4>E-mail:</h4> julio.souza@gmail.com
-                </span>
-                <span id="span-historia" class="historia removido">
-                    <h4>História:</h4> Sou um programador back-end que gosto de fazer projetos para conseguir um portfólio e treinar.
+                    <h4>E-mail:</h4> 
+                    <p id="email">julio.souza@gmail.com</p>
                 </span>
             </div>
         </section>
@@ -57,20 +58,7 @@
                     </div>
                 </div>
             </section>
-            <section class="label">
-                <div>História</div>
-                <div class="container">
-                    <div class="toggle-wrapper">
-                        <label class="switch">
-                            <input id="btn-historia" type="checkbox" class="hidden-toggle" checked/>
-                            <div class="slider">
-                                <div class="button"></div>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <div class="btn"><b>Gerar</b></div>
+            <div id="btn-gerar" class="btn"><b>Gerar</b></div>
         </section>
     </main>
     <script src="script.js"></script>
